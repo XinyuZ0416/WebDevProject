@@ -4,7 +4,7 @@ import ReviewsDAO from "./dao/reviewsDAO.js"; //use ReviewsDAO to interact with 
 
 // set up a connection to a MongoDB db, and start the server to handle incoming requests
 
-// MongoDB Connection Details
+// MongoDB Connection Details 
 const MongoClient = mongodb.MongoClient;
 const mongo_username = process.env['MONGO_USERNAME'];
 const mongo_password = process.env['MONGO_PASSWORD'];
