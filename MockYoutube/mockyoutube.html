@@ -1,0 +1,284 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MockYoutube</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ </head>
+
+
+ <body>
+
+    <!-- ———————————————— header ———————————————— -->
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="headericons/hamburger.png" alt="hamburger">
+            <img class="yt-logo" src="headericons/yticon.png" alt="yticon">
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img src="headericons/search.png" alt="search">
+            </button>
+            <button class="voice-search-button">
+                <img src="headericons/mic.png" alt="mic"> 
+            </button>
+        </div>
+        
+        <div class="right-section">
+            <img class="upload-icon" src="headericons/video.png" alt="video">
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="headericons/bell.png" alt="bell">
+                <div class="notifications-count">3</div>
+            </div>
+            <img class="current-user-pic" src="headericons/profile.jpeg" alt="profile">
+        </div>
+    </header>
+
+    <!-- ———————————————— sidebar ———————————————— -->
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="sidebaricons/home.png" alt="home">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebaricons/shorts.png" alt="shorts">
+            <div>Shorts</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebaricons/subscriptions.png" alt="subscriptions">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebaricons/library.png" alt="library">
+            <div>Library</div>
+        </div>
+
+    </nav>
+
+    <!-- ———————————————— body ———————————————— -->
+    <main>
+        <section class="video-grid">
+            <!-- A Capybara Family's Day at Play -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/capyfam.jpg" alt="A Capybara Family's Day at Play">
+                    <div class="video-time">14:20</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/NatGeo.jpeg" alt="NatGeo">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            A Capybara Family's Day at Play
+                        </p>
+                        <p class="video-author">
+                            Nat Geo WILD &#10003;
+                        </p>
+                        <p class="video-stats">
+                            950K views &#183; 7 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Pelican't Eat A Capybara -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/pelicant.jpeg" alt="Pelican't Eat A Capybara">
+                    <div class="video-time">23:57</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/speedway.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            Pelican't Eat A Capybara
+                        </p>
+                        <p class="video-author">
+                            Speedway Labs
+                        </p>
+                        <p class="video-stats">
+                            5.4M views &#183; 2 years ago
+                        </p>
+                    </div>
+                </div> 
+                
+            </div>
+    
+            <!-- Making Friends with a Capybara -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/friends.webp" alt="Making Friends with a Capybara">
+                    <div class="video-time">18:23</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/martin.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            Making Friends with a Capybara
+                        </p>
+                        <p class="video-author">
+                            Martin Faulks
+                        </p>
+                        <p class="video-stats">
+                            3.8M views &#183; 9 years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- A Little Dive -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/dive.webp" alt="A Little Dive">
+                    <div class="video-time">45:43</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/hippo.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            A Little Dive
+                        </p>
+                        <p class="video-author">
+                            hippopotatomus
+                        </p>
+                        <p class="video-stats">
+                            5.6M views &#183; 10 years ago
+                        </p>
+                    </div>
+                </div>      
+            </div>
+    
+            <!-- Capybara Slay -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/slay.webp" alt="Capybara Slay">
+                    <div class="video-time">3:07</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/slaybara.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            Capybara Slay
+                        </p>
+                        <p class="video-author">
+                            ItsNezPlays
+                        </p>
+                        <p class="video-stats">
+                            130k views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- The Science Behind the Unproblematic Nature of the Capybara -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/science.webp" alt="The Science Behind the Unproblematic Nature of the Capybara">
+                    <div class="video-time">33:17</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/casualgeo.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Science Behind the Unproblematic Nature of the Capybara
+                        </p>
+                        <p class="video-author">
+                            Casual Geographic &#10003;
+                        </p>
+                        <p class="video-stats">
+                            4.3M views &#183; 10 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Hundreds of Capybaras Overrun Neighborhood in Argentina -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/overrun.webp" alt="Hundreds of Capybaras Overrun Neighborhood in Argentina">
+                    <div class="video-time">1:32</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/KHOU.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            Hundreds of Capybaras Overrun Neighborhood in Argentina
+                        </p>
+                        <p class="video-author">
+                            KHOU 11 &#10003;
+                        </p>
+                        <p class="video-stats">
+                            1M views &#183; 2 Years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- The Largest and Chillest Rodents in the World -->
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/rodent.webp" alt="The Largest and Chillest Rodents in the World">
+                    <div class="video-time">10:06</div>
+                </div>
+    
+                <div class="video-info-grid">
+                    <div class="channel-pic">
+                        <img class="profile-pic" src="profilepics/crazy.jpeg" alt="speedway">
+                    </div>
+    
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Largest and Chillest Rodents in the World
+                        </p>
+                        <p class="video-author">
+                            Crazy Creatures
+                        </p>
+                        <p class="video-stats">
+                            1.3M views &#183; 2 Years ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+
+ </html>
