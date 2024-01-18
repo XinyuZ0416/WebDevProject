@@ -1,6 +1,6 @@
 import ReviewsDAO from "../dao/reviewsDAO.js"; 
 
-// structure the class to handle CRUD operations in the context of movie reviews 
+// handle CRUD operations in the context of movie reviews 
 // and interact with ReviewsDAO that is responsible for communication with the database
 export default class ReviewsController{
     // Create: POST - apiPostReview
@@ -21,7 +21,6 @@ export default class ReviewsController{
     static async apiGetReview(req, res, next){
         try{
             let id = req.params.id || {};
-            console.log('ID:', id);
             let review = await ReviewsDAO.getReview(id);
             if(!review){
                 res.status(404).json({error:"Not Found"});
@@ -29,7 +28,6 @@ export default class ReviewsController{
             }
             res.json(review);
         }catch(e){
-            console.log(`api, ${e}`);
             res.status(500).json({error:e});
         }
     }
@@ -45,7 +43,6 @@ export default class ReviewsController{
             }
             res.json(reviews);
         }catch(e){
-            console.log(`api, ${e}`);
             res.status(500).json({error:e});
         }
     }
@@ -70,31 +67,7 @@ export default class ReviewsController{
             res.status(500).json({error:e.message});
         }
     }
-
-    // static async apiUpdateReview(req, res, next){ (教程)
-    //     try{
-    //         const reviewId = req.params.id;
-    //         const user = req.body.user;
-    //         const review = req.body.review;
-            
-    //         const reviewResponse = await ReviewsDAO.updateReview(reviewId, user, review);
-
-    //         var error = reviewResponse;
-    //         if(error){ // check for presence of error (assume that if there is an error, it will be indicated in the response)
-    //             res.status(400).json({error});
-    //             return; // exit the function after sending an error response, so that res.json({status: "Success"}) won't be sent again
-    //         }
-    //         if(reviewResponse.modifiedCount === 0){ // check for modification count
-    //             throw new Error("Unable to update review");
-    //         }
-
-    //         res.json({status:"Success"}); // this line will only be reached if there is no error
-    //     }catch(e){
-    //         res.status(500).json({error:e.message});
-    //     }
-    // }
-
-
+    
     // Delete: DELETE - apiDeleteReview
     static async apiDeleteReview(req, res, next){
         try{
