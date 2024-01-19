@@ -1,3 +1,5 @@
+(If the add/ delete review functions are not working, it's because they need authorization credentials to my mongo db to run.)
+
 index.js ——————————
 1.	Sets up a connection to MongoDB Atlas cluster (MongoDB cloud)
 2.	Injects MongoDB client into DAO to interact with db
