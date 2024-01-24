@@ -1,1 +1,1 @@
-Web projects i did following tutorials
+Web projects i made learning from tutorials
