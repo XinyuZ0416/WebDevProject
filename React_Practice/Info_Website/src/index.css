@@ -33,7 +33,7 @@
 main{
     padding: 57px 27px;
     color: white;
-    background-image: url('src/assets/iconbg.png');
+    background-image: url('/public/iconbg.png');
     background-repeat: no-repeat;
     background-position: right 75%;
 }
