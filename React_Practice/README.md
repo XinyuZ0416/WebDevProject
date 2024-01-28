@@ -1,0 +1,1 @@
+React practices using Vite

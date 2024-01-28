@@ -1,6 +1,8 @@
 import app from "./server.js";
 import mongodb from "mongodb";
 import ReviewsDAO from "./dao/reviewsDAO.js"; //use ReviewsDAO to interact with db and perform CRUD operations on reviews
+import dotenv from 'dotenv';
+dotenv.config();
 
 // set up a connection to a MongoDB db, and start the server to handle incoming requests
 
