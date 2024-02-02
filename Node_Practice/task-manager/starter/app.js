@@ -7,8 +7,6 @@ require('dotenv').config()
 // parse json
 app.use(express.json())
 
-app.get('/hello', (req, res)=> res.send('Task Manager App'))
-
 app.use('/api/v1/tasks', tasks)
 
 const port = 3000
