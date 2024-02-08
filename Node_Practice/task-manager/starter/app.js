@@ -5,6 +5,7 @@ const connectDB = require('./db/connect.js')
 require('dotenv').config()
 
 // parse json
+app.use(express.static('./public'))
 app.use(express.json())
 
 app.use('/api/v1/tasks', tasks)
